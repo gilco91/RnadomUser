@@ -43,7 +43,7 @@ export const FilteringTable=({users})=>{
     const{pageIndex}=state
 
     function getRow(rowFromTable){
-        const path = `/user/${rowFromTable.id.name}`
+        const path = `/user/${rowFromTable.dob.date}`
         navigate(path)
     }
     

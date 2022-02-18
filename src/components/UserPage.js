@@ -7,7 +7,7 @@ const UserPage = ({users}) => {
     const [user, setUser] = useState(null)
 
     useEffect(() => {
-        const userToShow = users.find((u) => u.id.name === userId);
+        const userToShow = users.find((u) => u.dob.date === userId);
         setUser(userToShow)
     }, [users, userId])
 
